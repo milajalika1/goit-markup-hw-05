@@ -425,7 +425,7 @@
         </div>
       </section>
     </main>
-
+    <!-- footer -->
     <footer class="page-footer">
       <div class="container container-wrapper">
         <div class="container-footer">
@@ -474,8 +474,14 @@
           <p class="social-media-text">Subscribe</p>
           <form class="subscibe-form">
             <label class="subscibe-label">
-            <input class="subscibe-form-input" type="email" name="user-subscribe-email" placeholder="E-mail" /></label>
-            <button class="subscibe-button" type="submit">Subscribe
+              <input
+                class="subscibe-form-input"
+                type="email"
+                name="user-subscribe-email"
+                placeholder="E-mail"
+            /></label>
+            <button class="subscibe-button" type="submit">
+              Subscribe
               <svg class="icon-social" width="24" height="24">
                 <use href="/images/icons.svg#icon-icon-send"></use>
               </svg>
@@ -484,5 +490,89 @@
         </div>
       </div>
     </footer>
+    <!-- backdrop  -->
+    <div class="backdrop is-open">
+      <div class="modal">
+        <button class="modal-close-button" type="button">
+          <svg class="modal-close-button-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+        <p class="text-modal">Leave your contacts and we will call you back</p>
+        <form class="form-modal">
+          <div class="form-modal-wrapper">
+            <label for="user-name" class="form-modal-label">Name</label>
+            <div class="form-input-svg-wrapper">
+              <input
+                class="form-modal-input"
+                type="text"
+                id="user-name"
+                name="user-name"
+                title="Andrii"
+                required
+              />
+              <svg class="form-icons" width="12" height="12">
+                <use href="./images/icons.svg#icon-Person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-modal-wrapper">
+            <label for="user-phone" class="form-modal-label">Phone</label>
+            <div class="form-input-svg-wrapper">
+              <input
+                class="form-modal-input"
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+                required
+              />
+              <svg class="form-icons" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-modal-wrapper">
+            <label for="user-email" class="form-modal-label">Email</label>
+            <div class="form-input-svg-wrapper">
+              <input
+                class="form-modal-input"
+                type="email"
+                id="user-email"
+                name="user-email"
+                required
+              />
+              <svg class="form-icons" width="15" height="12">
+                <use href="./images/icons.svg#icon-letter"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-modal-wrapper">
+            <label for="user-comment" class="form-modal-label">Comment</label>
+
+            <textarea
+              class="form-modal-textarea"
+              name="user-comment"
+              id="user-comment"
+              required
+            ></textarea>
+          </div>
+          <div class="form-checkbox-wrapper">
+            <input
+              class="checkbox-input"
+              type="checkbox"
+              name="privacy-policy"
+              id="privacy-policy"
+              value="true"
+              required
+            />
+            <label for="privacy-policy" class="form-checkbox-label"
+              >I accept the terms and conditions of the
+              <a class="privacy-policy-link" href="">Privacy Policy</a></label
+            >
+          </div>
+          <button class="form-send-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
